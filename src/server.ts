@@ -8,7 +8,7 @@ import type { Socket } from "net";
 dotenv.config();
 
 const app = express();
-const API_URL = process.env.API_URL || "https://api.openai.com";
+const API_URL = process.env.API_URL || "https://proxmox.example.com";
 const API_TOKEN = process.env.API_TOKEN || "your_api_token_here";
 
 const proxyOptions: Options = {
